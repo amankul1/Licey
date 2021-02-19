@@ -1,0 +1,275 @@
+
+
+*{
+   left: 0;
+   top: 0;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Poppins-SemiBold, sans-serif;
+}
+body{
+   width:100%;
+   overflow-x: hidden;
+}
+
+/* Louder */
+
+.mask{
+   width: 100%;
+   height: 100vh;
+   position: fixed;
+   z-index: 100;
+   background-color: #1c2326;
+   transition: 0.8s;
+}
+
+.hide{
+   opacity: 0;
+}
+
+/* louder end */
+
+.mainBlocks{ 
+   margin-top: 10vh;
+}
+.mainBlocks:first-child{
+   margin-top: 0;
+}
+.mainContentBlocks{
+   width: 100%;
+   height: 100%;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: flex-start;
+}
+.mainBlockTitle{
+   width: 100%;
+   height: 8%;
+   border-bottom: 0.5px solid black;
+   display: flex;
+   align-items: center;
+   padding-left: 5%;
+   font-weight: 600;
+   font-size: 26pt;
+}
+.mainBlockText{
+   padding: 2vh;
+   position: relative;
+   width: 100%;
+}
+.mainBlockMoreButton{
+   width: 100%;
+   height: 6%;
+   display: flex;
+   padding-left: 60%;
+   align-items:center;
+}
+.mainContentLearnMore{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 30vw;
+   height: 40px;
+   background-color: royalblue;
+   cursor: pointer;
+   border-radius: 10px;
+   font-size: 16pt;
+   transition: 1s;
+   transform: scale(0.95);
+   margin-top: 100px;
+}
+.mainContentLearnMore:hover{
+   transform: scale(1);
+   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+/* -------------------------------About us --------------------------------------- */
+
+.mainAboutLeftText{
+   width: 54%;
+   float: left;
+   padding: 5vh;
+   font-size: 16px;
+   font-weight: 500;
+}
+.mainAboutImage{
+   width: 400px;
+   float: left;
+   background-color:rgb(75, 68, 94);
+   margin-left: 8%;
+   margin-top: 5vh;
+}
+.mainAboutImage img{
+   width: 100%;
+}
+.mainAboutRightText{
+   width: 38%;
+   float: left;
+   padding: 3vh;
+   margin-left: 5%;
+   margin-top: 3%;
+   
+}
+
+/* ----------News---------------------- */
+
+.mainNewsLeftText{
+   width: 60%;
+}
+.mainNewsImage{
+   width: 15%;
+}
+.mainNewsImage img{
+   width: 100%;
+}
+.main_news_bloks{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-content: space-around;
+   margin-top: 50px;
+}
+
+/* ---------------Galery----------------------- */
+
+.contentGaleryText{
+   padding-top: 5vh;
+   padding-bottom: 5vh;
+   width: 100%;
+   height: 8%;
+   float: left;
+}
+.contentGaleryImage{
+   float: left;
+   width: 30%;
+   margin: 1.5%;
+}
+.contentGaleryImage img{
+   width: 100%;
+}
+
+/* ------------------For parents---------------- */
+
+.contentForParents{
+   width: 49%;
+   float: left;
+   padding: 3vh;
+}
+.contentForStudents{
+   width: 49%;
+   float: left;
+   margin-left: 2%;
+   padding: 3vh;
+}
+
+
+/* --------------------Adapting about us----------------------- */
+@media screen and (max-width: 1150px){
+   .mainAboutLeftText{
+      width: 90%;
+      float: left;
+      padding: 3vh;
+      font-size: 16px;
+      font-weight: 500;
+   }
+   .mainAboutImage{
+      width: 90%;
+      float: left;
+      background-color:rgb(75, 68, 94);
+      margin-left: 3vh;
+      margin-top: 5vh;
+   }
+   .mainAboutRightText{
+      width: 90%;
+      float: left;
+      padding: 3vh;
+      margin-left: 0%;
+      margin-top: 3%;
+      
+   }
+
+}
+
+/* --------------------Adapting news----------------------- */
+
+@media screen and (max-width: 800px){
+
+   .mainNewsLeftText{
+      width: 90%;
+      float: left;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+   }
+   .mainNewsImage{
+      width: 90%;
+      float: left;
+      background-color:rgb(75, 68, 94);
+      margin-bottom: 2vh;
+   }
+   .main_news_bloks{
+      width: 100%;
+      padding: 3vh,0,3vh,3vh;
+      margin-top: 10px;
+   }
+}
+/* --------------------Adapting gelary----------------------- */
+
+@media screen and (max-width: 500px){
+   .contentGaleryText{
+      padding-top: 5vh;
+      padding-bottom: 5vh;
+      width: 100%;
+      height: 8%;
+      float: left;
+   }
+   .contentGaleryImage{
+      float: center;
+      margin-left: 5%;
+      width: 90%;
+      padding: 5vh;
+      background-color:rgb(75, 68, 94);
+      margin: 1.5%;
+   }
+}
+
+
+/* --------------------Adapting for parrents----------------------- */
+
+@media screen and (max-width: 700px){
+
+   .contentForParents{
+      width: 90%;
+      float: left;
+      padding: 3vh;
+   }
+   .contentForStudents{
+      width: 90%;
+      float: left;
+      margin-left: 2%;
+      padding: 3vh;
+   }
+
+
+   .mainContentLearnMore{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30vw;
+      height: 40px;
+      background-color: royalblue;
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: 12pt;
+      transition: 1s;
+      transform: scale(0.95);
+      margin-top: 2vh;
+   }
+   .mainContentLearnMore:hover{
+      transform: scale(1);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+   }
+
+
+}

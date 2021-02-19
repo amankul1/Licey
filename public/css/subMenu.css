@@ -1,0 +1,32 @@
+.sub_menu{  
+   width: 100%;
+   position: sticky;
+}
+
+ul{
+   list-style:none;
+   height: 100%;
+   padding-top: 1vh;
+   padding-bottom: 1vh;
+   width: 100%;
+}
+ 
+ li{
+   font-family:sans-serif; 
+   font-size: 15px;
+   font-weight: 500;
+   width:90%;
+   text-align:center;
+   color:#fff;
+   font-family: sans-serif;
+   padding: 2vh 0.5vh 2vh 0.5vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: inset;
+   background-color: #3E5B90;
+   cursor: pointer;  
+   margin-top: 5%;
+   border-radius: 5px;
+ }
+ 

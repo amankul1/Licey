@@ -1,0 +1,91 @@
+*{
+   left: 0;
+   top: 0;
+   box-sizing: border-box;
+}
+
+body{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+}
+
+.wrapper{
+   padding: 5vh;
+}
+#back{
+   text-decoration: none;
+   color: #1c2326;
+}
+.backBut{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 90px;
+   height: 35px;
+   border: 1px solid #1c2326;
+   border-radius: 5px;
+   margin-bottom: 30px;
+   opacity: 0.6;
+}
+.backBut:hover{
+   cursor: pointer;
+   color: aqua;
+   opacity: 0.9;
+}
+
+tr{
+   height: 30px;
+}
+th{
+   font-size: 16px;
+   font-weight: 550;
+   border-left: 1px solid rgba(0, 0, 0, 0.5);
+   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+th:first-child{
+   border-left: unset;
+}
+tr td{
+   text-align: center;
+   border-left: 1px solid rgba(0, 0, 0, 0.5);
+   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+   font-size: 14px;
+   font-weight: 550;
+   padding: 4px 20px 4px 20px;
+}
+tr td:first-child{
+   border-left: unset;
+}
+.profileButton button{
+   background-color: #3E5B90;;
+   color: white;
+   border-radius: 5px;
+   padding: 4px;
+}
+
+.profileButton button:hover{
+   cursor: pointer;
+}
+.search{
+   padding: 2px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+   margin-bottom: 40px;
+   display: flex;
+}
+.search input{
+   border: unset;
+   width: 75%;
+   height: 30px;
+}
+.search button{
+   border-radius: 6px;
+   color: white;
+   border: unset;
+   width: 25%;
+   background-color: rgb(102, 194, 48);
+}
+.search button:hover{
+   cursor: pointer;
+}

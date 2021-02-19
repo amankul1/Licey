@@ -1,0 +1,237 @@
+
+
+
+ *{
+   margin: 0;
+   padding: 0;
+   left: 0;
+   top: 0;
+   box-sizing: border-box;
+ }
+body{
+   overflow-x: hidden;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: space-between;
+}
+
+/* Louder */
+
+.mask{
+   width: 100%;
+   height: 100vh;
+   position: fixed;
+   z-index: 100;
+   background-color: #1c2326;
+   transition: 0.8s;
+}
+
+.hide{
+   opacity: 0;
+}
+
+/* louder end */
+
+
+.menu{
+   z-index: unset;
+}
+.parentsHeader{
+   width: 100%;
+   height: 15vh;
+}
+.parentsContent{
+   width: 100%;
+   height: 100%;
+   margin-top: 5vh;
+   margin-bottom: 5vh;
+}
+.leftBlock{
+   float: left;
+   width: 17%;
+   position: sticky;
+} 
+.rightBlock{
+   float: left;
+   width:83%;
+   height: 100%;
+   padding: 2vh 2vh 2vh 2vh;
+}
+.forParrents{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   align-items: flex-start;
+}
+.forParentTitle{
+   width: 100%;
+   text-align: center;
+   padding: 2vh 0 1vh 0;
+   margin-bottom: 5vh;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.forParentTitle span{
+   font-size: 30px;
+}
+.forPerantsPost{
+   width:100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: flex-start;
+   padding: 3vh 2vh 3vh 2vh;
+}
+.forPerantsPost img{
+   width: 100%;
+}
+.postName{
+   width: 28%;
+   padding: 2vh 0vh 2vh 0.5vh;
+}
+.postName span{
+   font-size: 17px;
+   font-weight: 550;
+}
+.postText{
+   width: 72%;
+   padding: 2vh 2vh 2vh 5vh;
+   border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.forStudentsPost{
+   width: 100%;
+   padding: 2vh 0 2vh 0;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.studentPostName{
+   width: 20%;
+   text-align: center;
+   cursor: pointer;
+}
+.studentPostText{
+   width: 60%;
+   text-align: center;
+}
+.studentDownload{
+   width: 20%;
+   text-align: center;
+   cursor: pointer;
+   transition: 0.5s;
+}
+.studentDownload:hover{
+   color: rgb(155, 31, 0);
+}
+
+
+.parentsFooter{
+   width: 100%;
+   height: 100%;  
+}
+
+
+
+
+@media screen and (max-width: 720px){
+   .leftBlock{
+      display:none;
+   } 
+   .rightBlock{
+      float: left;
+      width:100%;
+      height: 100%;
+      padding: 2vh 0vh 2vh 0vh;
+   }
+   .forParrents{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: flex-start;
+   }
+   .forParentTitle{
+      width: 100%;
+      text-align: center;
+      padding: 2vh 0 1vh 0;
+      margin-bottom: 5vh;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+   }
+   .forParentTitle span{
+      font-size: 30px;
+   }
+   .forPerantsPost{
+      width:100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 3vh 2vh 3vh 0vh;
+   }
+   .forPerantsPost img{
+      width: 100%;
+   }
+   .postName{
+      width: 100%;
+      padding: 2vh 0vh 2vh 0.5vh;
+   }
+   .postName span{
+      font-size: 16px;
+      font-weight: 600;
+   }
+   .postText{ 
+      width: 100%;
+      font-size: 14px;
+      padding: 2vh 2vh 2vh 5vh;
+      border-left: unset;
+   }
+   
+   .forStudentsPost{
+      width: 100%;
+      padding: 2vh 0 2vh 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+   }
+   .studentPostName{
+      width: 20%;
+      text-align: center;
+      cursor: pointer;
+   }
+   .studentPostText{
+      width: 60%;
+      text-align: center;
+   }
+   .studentDownload{
+      width: 20%;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.5s;
+   }
+   .studentDownload:hover{
+      color: rgb(155, 31, 0);
+   }
+   
+   .purson_room{
+      cursor: pointer;
+      padding: 1.2vh 6vh 1.5vh 6vh;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 10px;
+      transition: 0.5s;
+   }
+   .purson_room:hover{
+      transform-origin: center;
+      transform:translateX(-3px) translateY(-2px) scale(1.02);
+      -moz-box-shadow:    0 0 10px #000000;
+      -webkit-box-shadow:  0 0 10px #000000;
+      box-shadow:    0 0 10px #000000;
+      color: crimson;
+   }
+   .parentsFooter{
+      width: 100%;
+      height: 100%;  
+   }
+}

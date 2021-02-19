@@ -1,0 +1,93 @@
+.footer{
+   padding: 100px 50px 80px 50px;
+   position: relative;
+   width: 100vw;
+   background-color: #191919;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+}
+.footerBlocks{
+   width: 25%;
+   float: left;
+}
+.footerTitle{
+   width: 90%;
+   display: flex;
+   align-items:center;
+   font-size: 18pt;   
+   color: white;
+}
+.footerText{
+   padding-top: 5%;
+   width: 90%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   font-size: 16px;
+   color: #4A4A4A;
+}
+.footerText p{
+   width: 90%;
+}
+.footerIcons{
+   padding: 80px 23% 0 23%;
+   width: 80%;
+   display: flex;
+   justify-content: space-between;
+   align-items:center;
+}
+.footerIcons div{
+   background-color: #4A4A4A;
+   border-radius: 10px;
+   transition: 1s;
+}
+.footerIcons div:hover{
+   background-color: white;
+   cursor: pointer;
+   box-shadow: 0px 0px 8px  white, 0px 0px 8px  white;
+}
+.footer a{
+   text-decoration: none;
+   color: #4A4A4A;
+}
+.footer a:hover{
+   color: white;
+}
+
+
+/* -------------------Adapting---------------------- */
+
+@media screen and (max-width: 800px){
+   .footer{  
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: space-around;
+   }
+   .footerBlocks{
+      width: 80%;
+      float: left;
+      margin-top: 5vh;
+   }
+   .footerIcons{
+      padding: 80px 10% 0 10%;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+   }
+   
+}
+
+@media screen and (max-width: 500px){
+   .footerIcons{
+      padding: 80px 0% 0 0%;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+   }
+
+}

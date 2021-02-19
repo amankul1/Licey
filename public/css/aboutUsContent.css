@@ -1,0 +1,305 @@
+
+*{
+   margin: 0;
+   padding: 0; 
+   left: 0;
+   top: 0;
+   box-sizing: border-box;
+}
+body{
+   overflow-x: hidden;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: space-between;
+}
+
+/* Louder */
+
+.mask{
+   width: 100%;
+   height: 100vh;
+   position: fixed;
+   z-index: 100;
+   background-color: #1c2326;
+   transition: 0.8s; 
+}
+
+.hide{
+   opacity: 0;
+}
+
+/* louder end */
+
+
+.menu{
+   z-index: unset;
+}
+.aboutHeader{
+   width: 100%;
+   height: 15vh;
+}
+.aboutContent{
+   width: 100%;
+   margin-top: 5vh;
+   margin-bottom: 5vh;
+   position: relative;
+}
+.leftBlock{
+   float: left;
+   width: 17%;
+   position: relative;
+   height: 100%;
+}
+.rightBlock{
+   float: left;
+   width:83%;
+   border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.rightBlockPost{
+   padding: 10vh 5vh 5vh 5vh;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-content:space-around;
+   border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+.rightBlockPost:first-child{
+   border-top: unset;
+}
+
+.aboutUsPostTitle{
+   width: 100%;
+   padding: 4vh;
+   text-align: center;
+   font-size: 24px;
+   font-weight: 600;   
+}
+.aboutUsPostText{
+   width: 75%;
+   font-size: 16px;
+   font-weight: 500; 
+}
+.aboutUsPostImage{
+   width: 25%;
+   height: 100%;
+   padding: 3vh 3vh 3vh 3vh;
+}
+.aboutUsPostImage img{
+   width: 100%;
+   margin-bottom: 5vh;
+}
+.employees{
+   width:100%;
+   padding-top: 5vh;
+   padding-bottom: 5vh;
+}
+.teacherBlock{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: space-around;
+   padding-bottom: 1vh;
+   padding-top: 1vh;
+}
+
+.teacherDescription{
+   width: 75%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: flex-start;
+   border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.description{
+   width:100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 1vh;  
+}
+.descriptionName{
+   width: 30%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.descriptionName span{
+   font-size: 18px;
+   font-weight: 500;
+}
+.descriptionText{
+   width: 70%;
+   padding-left: 1vh;
+   background-color: rgb(219, 212, 212);
+}
+.theacherPhoto{
+   width: 25%;
+   display: flex;
+   align-items: flex-start;
+}
+.theacherPhoto img{
+   width: 100%;
+}
+
+
+.aboutUsPostDocuments{
+   width: 100%;
+   padding: 2vh;
+   display: flex;
+   justify-content: space-around;
+}
+
+.aboutUsPostDocumentLink{
+   width: 60%;
+   padding-top: 3vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 18px;
+   font-weight: 550;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.aboutUsPostDocumentImage{
+   width: 23%;
+   padding-top: 2vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+   cursor: pointer;
+}
+.downloadLink{
+   width: 15%;
+   padding-top: 2vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+   cursor: pointer;
+   transition: 0.5s;
+}
+.downloadLink:hover{
+   color: rgb(155, 31, 0);
+}
+
+.aboutFooter{
+   width: 100%;
+   height: 100%;  
+}
+
+.video_about_licey{
+   width: 100%;
+   padding: 20px 0 20px 0;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+
+@media screen and (max-width: 900px){
+
+   .aboutUsPostImage{
+      width: 100%;
+      padding: 3vh 3vh 3vh 3vh;
+   }
+   .aboutUsPostImage img{
+      width: 100%;
+   }
+
+   .leftBlock{
+      display: none;
+   }
+   .rightBlock{
+      float: left;
+      width:100%;
+      border-left: unset;
+   }
+   .rightBlockPost{
+      width: 100%;
+      padding: 10vh 1vh 5vh 1vh;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content:space-around;
+      border-top: 1px solid rgba(0, 0, 0, 0.5);
+   }
+   .descriptionName{
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .descriptionName span{
+      font-size: 15px;
+      font-weight: 500;
+   }
+   .descriptionText p{
+      width: 60%;
+      font-size: 13px;
+      font-weight: 500;
+   }
+
+}
+
+@media screen and (max-width: 600px){
+
+   .aboutUsPostImage{
+      width: 100%;
+      padding: 3vh 3vh 3vh 3vh;
+   }
+   .aboutUsPostImage img{
+      width: 100%;
+   }
+   .video_about_licey iframe{
+      width:360px;
+   }
+   .leftBlock{
+      display: none;
+   }
+   .rightBlock{
+      float: left;
+      width:100%;
+      border-left: unset;
+   }
+   .rightBlockPost{
+      width: 100%;
+      padding: 10vh 1vh 5vh 1vh;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content:space-around;
+      border-top: 1px solid rgba(0, 0, 0, 0.5);
+   }
+   .descriptionName{
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .descriptionName span{
+      font-size: 15px;
+      font-weight: 500;
+   }
+   .descriptionText p{
+      width: 60%;
+      font-size: 13px;
+      font-weight: 500;
+   }
+   .teacherDescription{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      border-top: 1px solid rgba(0, 0, 0, 0.5);
+   }
+   .theacherPhoto{
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+   }
+
+}
